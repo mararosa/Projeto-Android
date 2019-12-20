@@ -104,4 +104,19 @@
         app:srcCompat="@drawable/icone_altura"
         tools:layout_editor_absoluteY="494dp" />
 
+    <Button
+        android:id="@+id/btnTabela"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/botao_arredondado"
+        android:text="Tabela"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAltura"
+        app:layout_constraintVertical_bias="0.19" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
