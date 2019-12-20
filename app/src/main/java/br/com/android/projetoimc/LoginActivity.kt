@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
 
         //obtendo as informaçoes do shared preference
         val email = dadosLogin.getString("email", "Não Encontrado")
-        val senha = dadosLogin.getString("senha", "Não Encontrado")
+        val senha_login= dadosLogin.getString("senha_cadastro", "Não Encontrado")
 
         //Listener (ouvinte) para o bbotao entrar
         btnEntrar.setOnClickListener {
@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
 
             if (usuario.isNotEmpty()) {
                 if (senha.isNotEmpty()) {
-                    if (usuario == email && senha == senha) {
+                    if (usuario == email && senha == senha_login) {
                         // txvResultado.text = "Logado" Agora ao inves de aparecer logado vamos para a tela main
                         //Alertando que o cadastro foi efetuado
                         AlertDialog.Builder(this@LoginActivity)
