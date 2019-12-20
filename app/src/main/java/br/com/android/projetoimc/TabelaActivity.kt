@@ -13,10 +13,7 @@ class TabelaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_tabela)
 
         btnSite.setOnClickListener {
-
             startActivity(Intent(this@TabelaActivity, WebActivity::class.java))
-
         }
-
     }
 }
