@@ -13,3 +13,4 @@ class WebActivity : AppCompatActivity() {
         wbvSite.loadUrl("http://www.abeso.org.br/atitude-saudavel/imc")
     }
 }
+
