@@ -4,6 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImcActivity">
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        android:text="Cálculo de IMC"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/seebPeso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seebAltura"
+        android:layout_width="305dp"
+        android:layout_height="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/seebPeso"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        app:layout_constraintBottom_toTopOf="@+id/btnTabela"
+        app:layout_constraintTop_toBottomOf="@+id/seebAltura"
+        tools:layout_editor_absoluteX="258dp" />
+
+    <Button
+        android:id="@+id/btnTabela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabela"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
+        tools:layout_editor_absoluteX="198dp" />
+
+    <SeekBar
+        android:id="@+id/seebPeso"
+        android:layout_width="309dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/seebAltura"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/txvValor"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seebPeso"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <TextView
+        android:id="@+id/txvValor"
+        android:layout_width="71dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@+id/seebAltura"
+        tools:layout_editor_absoluteY="329dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
