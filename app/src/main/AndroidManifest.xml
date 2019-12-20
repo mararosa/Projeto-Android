@@ -15,7 +15,6 @@
         <activity android:name=".WebActivity"></activity>
         <activity android:name=".TabelaActivity" />
         <activity android:name=".ResultadoActivity" />
-        <activity android:name=".InformacoesActivity" />
         <activity android:name=".CadastroActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>

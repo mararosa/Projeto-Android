@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo_finalizado" />
 
     <EditText
         android:id="@+id/edtUsuario"
@@ -82,10 +82,12 @@
         android:id="@+id/imageView2"
         android:layout_width="94dp"
         android:layout_height="92dp"
+        android:layout_marginTop="570dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logohack" />
 
     <ImageView
